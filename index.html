@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audacity - A Memoir | Coming Soon</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f0f0f0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .book-cover {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+            margin: 1rem auto 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            margin-bottom: 1rem;
+            color: #e94560;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            color: #a8dadc;
+        }
+        .tagline {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .notify-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+        .notify-form input {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #e94560;
+            background: rgba(255, 255, 255, 0.1);
+            color: #f0f0f0;
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .notify-form input::placeholder { color: #a8dadc; }
+        .notify-form button {
+            padding: 15px 30px;
+            background: #e94560;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .notify-form button:hover { background: #d63447; }
+        .coming-soon {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e94560;
+            margin-bottom: 1rem;
+        }
+        .social-links {
+            margin-top: 3rem;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .social-links a {
+            color: #a8dadc;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .social-links a:hover { color: #e94560; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .subtitle { font-size: 1.2rem; }
+            .tagline { font-size: 1rem; }
+            .notify-form { flex-direction: column; }
+            .book-cover { max-width: 240px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AUDACITY</h1>
+        <div class="subtitle">A Memoir</div>
+        <div class="tagline">
+            What happens when the strategies that saved you start to break you?
+        </div>
+        
+        <img src="Audacity-Memoir.jpg" alt="Audacity Memoir Book Cover" class="book-cover">
+        
+        <div class="tagline">
+            A memoir for those who outpaced their origins—and discovered that success doesn't come with a map for what to do with the grief, the armor, or the cost of survival.
+        </div>
+        
+        <div class="coming-soon">COMING SOON</div>
+        
+        <form class="notify-form" action="https://southernsoulpodcast.us1.list-manage.com/subscribe/post?u=fde74a64cf2e594694a1e2769&id=8da81d41ef" method="post" target="_blank">
+            <input type="email" name="EMAIL" placeholder="Enter your email" required>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                <input type="text" name="b_fde74a64cf2e594694a1e2769_8da81d41ef" tabindex="-1" value="">
+            </div>
+            <button type="submit">Notify Me</button>
+        </form>
+        
+        <div class="social-links">
+            <a href="who-this-book-is-for.html">Who This Book Is For</a>
+            <a href="reader-promise.html">Reader Promise</a>
+            <a href="https://soulthursday.com" target="_blank">Soul Thursdays</a>
+            <a href="#" onclick="alert('Social links coming soon'); return false;">Instagram</a>
+            <a href="#" onclick="alert('Social links coming soon'); return false;">Twitter</a>
+        </div>
+    </div>
+
+</body>
+</html>
