@@ -24,13 +24,25 @@
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             color: #f0f0f0;
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
         }
+        .header-nav {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px 0;
+            margin-bottom: 2rem;
+        }
+        .header-nav a {
+            color: #a8dadc;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        .header-nav a:hover { color: #e94560; }
         .container {
             max-width: 800px;
+            margin: 0 auto;
             text-align: center;
             animation: fadeIn 1.5s ease-in;
         }
@@ -101,29 +113,24 @@
             color: #e94560;
             margin-bottom: 1rem;
         }
-        .social-links {
-            margin-top: 3rem;
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-        .social-links a {
-            color: #a8dadc;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s;
-        }
-        .social-links a:hover { color: #e94560; }
+
         @media (max-width: 768px) {
             h1 { font-size: 2.5rem; }
             .subtitle { font-size: 1.2rem; }
             .tagline { font-size: 1rem; }
             .notify-form { flex-direction: column; }
             .book-cover { max-width: 240px; }
+            .header-nav { flex-direction: column; gap: 10px; }
         }
     </style>
 </head>
 <body>
+    <nav class="header-nav">
+        <a href="who-this-book-is-for.html">Who This Book Is For</a>
+        <a href="reader-promise.html">Reader Promise</a>
+        <a href="https://soulthursday.com" target="_blank">Soul Thursdays</a>
+    </nav>
+    
     <div class="container">
         <h1>AUDACITY</h1>
         <div class="subtitle">A Memoir</div>
@@ -146,12 +153,6 @@
             </div>
             <button type="submit">Notify Me</button>
         </form>
-        
-        <div class="social-links">
-            <a href="who-this-book-is-for.html">Who This Book Is For</a>
-            <a href="reader-promise.html">Reader Promise</a>
-            <a href="https://soulthursday.com" target="_blank">Soul Thursdays</a>
-        </div>
     </div>
 
 </body>
